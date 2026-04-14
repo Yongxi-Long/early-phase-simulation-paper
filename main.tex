@@ -1,16 +1,34 @@
-\documentclass{article}
-
+\documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}    % advanced math environments
+\usepackage{amssymb}    % mathematical symbols
+\usepackage{amsfonts}
+\usepackage{graphicx}   % include images
+\usepackage{booktabs}   % professional tables
+\usepackage{hyperref}   % clickable references and links
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{reference.bib}
 
 \title{Impact of early-phase design strategies on overall drug development success rate}
-\author{Yongxi Long, Rob Kessels, Sama Heydari, Elias Sjoerd, Peter van de Ven}
+\author{Yongxi Long \and Rob Kessels \and Sama Heydari \and Elias Sjoerd \and Peter van de Ven}
 \date{\today}
 
 \begin{document}
-
 \maketitle
+\begin{abstract}
+A considerable amount of effort has been dedicated to improve the design of early-phase dose-finding trials in oncology. However, few of them had applications to real trials and the conventional yet inefficient 3+3 design remains a common choice. Most comparative studies of early-phase trial designs focus on Phase I operating characteristics, leaving open the question of whether differences in dose selection meaningfully translate into downstream impact on drug development success.
 
+We propose a simulation framework to evaluate how representative dose-finding methods (3+3, BOIN, and CRM) impact the probability of significant results in Phase III trials, representing overall drug development success. We consider both chemotherapy-like profiles, where the classic monotonicity assumption about toxicity and efficacy holds, and immunotherapy-like drug profiles where the efficacy typically plateaus before reaching the maximum tolerable dose (MTD). Different toxicity control rules are implemented in Phase II and III to reflect varying extent of safety monitoring in practice. We further compare univariate designs to their bivariate extensions to investigate the potential benefits of incorporating early efficacy data. Finally, we redesign the development process of a targeted therapy, Imatinib in patients with advanced gastrointestinal stromal tumour (GIST), to illustrate the proposed simulation pipeline. 
+
+For chemotherapy-like drug profiles, BOIN and CRM substantially outperforms 3+3 across a range of late-phase toxicity control settings. In contrast, for immunotherapy-like drug profiles, the advantage of more efficient designs over 3+3 is compromised, particularly under stricter toxicity control. Bivariate designs, such as EffTox and BOIN12, yield more robust overall success rate. BOIN12 is less sensitive to utility tuning parameters compared to EffTox.
+
+The downstream performance of dose-finding methods heavily depends on the underlying drug profiles. Designs that perform well in identifying the MTD leads to a poor late-phase success rate when the dose-efficacy relationship has an early plateau in immunotherapy-like profiles. Utilizing efficacy information in Phase I does not necessarily guarantee higher overall success rates due to small sample sizes and insufficient follow-up in early phases. These findings highlight the importance to understand the potential shape of the candidate drug profile from pre-clinical and pilot studies when designing early-phase trials.
+\end{abstract}
 \section{Introduction}
-
-
+\parencite{BOIN}
+\newpage
+\addcontentsline{toc}{section}{Reference}
+\section*{Reference}
+\printbibliography [heading=none]
 \end{document}
