@@ -3070,7 +3070,36 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">reference.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">BOIN</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">drug_failure</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">MTD_OBD</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">OBD_clinical_efficacy</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">wages2015phase</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">guo2022bayesian</bcf:citekey>
+    <bcf:citekey order="3" intorder="3">guo2022bipse</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">TITE-CRM</bcf:citekey>
+    <bcf:citekey order="4" intorder="2">TITE-BOIN12</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">thall2003dose</bcf:citekey>
+    <bcf:citekey order="5" intorder="2">BOINcomb</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">review_phase1</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">rule_based_design</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">clertant2022early</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">CRM</bcf:citekey>
+    <bcf:citekey order="9" intorder="2">EWOC</bcf:citekey>
+    <bcf:citekey order="9" intorder="3">review_model_based_design</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">BOIN</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">review_model_assisted_design</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">clertant2022early</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">petroni2017implementation</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">horton2017performance</bcf:citekey>
+    <bcf:citekey order="14" intorder="2">iasonos2008comprehensive</bcf:citekey>
+    <bcf:citekey order="14" intorder="3">van2016performance</bcf:citekey>
+    <bcf:citekey order="14" intorder="4">zhou2018comparative</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">conaway2019impact</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">conaway2019impact</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">EWOC</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">ruppert2018overall</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">ruppert2018overall</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">araujo2023oncology</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
