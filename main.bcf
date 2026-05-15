@@ -3103,16 +3103,25 @@
     <bcf:citekey order="23" intorder="1">chiuzan_3_2024</bcf:citekey>
     <bcf:citekey order="24" intorder="1">BOIN</bcf:citekey>
     <bcf:citekey order="25" intorder="1">CRM</bcf:citekey>
-    <bcf:citekey order="25" intorder="2">EWOC</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">li_phase_2024</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">EffTox</bcf:citekey>
-    <bcf:citekey order="27" intorder="2">EffTox_hyperparameters</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">simon2stage</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">TITE-BOIN12</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">demetri2009imatinib</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">demetri2009imatinib</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">BOIN</bcf:citekey>
+    <bcf:citekey order="26" intorder="2">EWOC</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">li_phase_2024</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">BOIN12</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">EffTox</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">EffTox_hyperparameters</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">simon2stage</bcf:citekey>
     <bcf:citekey order="32" intorder="1">demetri2009imatinib</bcf:citekey>
     <bcf:citekey order="33" intorder="1">demetri2009imatinib</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">demetri2002efficacy</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">blanke2008phase</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">conaway2019impact</bcf:citekey>
+    <bcf:citekey order="36" intorder="2">ruppert2018overall</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">BOIN12</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">TITE-BOIN12</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">demetri2009imatinib</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">demetri2009imatinib</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">demetri2009imatinib</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">demetri2009imatinib</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
