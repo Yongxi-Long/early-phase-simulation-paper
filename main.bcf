@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.20" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -994,6 +994,7 @@
     <bcf:option datatype="string">alphaothers</bcf:option>
     <bcf:option datatype="string">sortalphaothers</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
+    <bcf:option datatype="string">citepagerange</bcf:option>
     <bcf:option datatype="string">texencoding</bcf:option>
     <bcf:option datatype="string">bibencoding</bcf:option>
     <bcf:option datatype="string">sortingtemplatename</bcf:option>
@@ -3060,139 +3061,4 @@
       <bcf:entrytype>report</bcf:entrytype>
       <bcf:constraint type="mandatory">
         <bcf:field>author</bcf:field>
-        <bcf:field>title</bcf:field>
-      </bcf:constraint>
-    </bcf:constraints>
-  </bcf:datamodel>
-  <!-- CITATION DATA -->
-  <!-- SECTION 0 -->
-  <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">reference.bib</bcf:datasource>
-  </bcf:bibdata>
-  <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">drug_failure</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">drug_failure</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">agrawal_nivolumab_2016</bcf:citekey>
-    <bcf:citekey order="3" intorder="2">bekaii-saab_regorafenib_2019</bcf:citekey>
-    <bcf:citekey order="3" intorder="3">fujimoto_phase_2017</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">MTD_OBD</bcf:citekey>
-    <bcf:citekey order="4" intorder="2">OBD_clinical_efficacy</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">wages2015phase</bcf:citekey>
-    <bcf:citekey order="5" intorder="2">guo2022bayesian</bcf:citekey>
-    <bcf:citekey order="5" intorder="3">guo2022bipse</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">TITE-CRM</bcf:citekey>
-    <bcf:citekey order="6" intorder="2">TITE-BOIN12</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">thall2003dose</bcf:citekey>
-    <bcf:citekey order="7" intorder="2">BOINcomb</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">review_phase1</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">rule_based_design</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">clertant2022early</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">CRM</bcf:citekey>
-    <bcf:citekey order="11" intorder="2">EWOC</bcf:citekey>
-    <bcf:citekey order="11" intorder="3">review_model_based_design</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">BOIN</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">review_model_assisted_design</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">clertant2022early</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">petroni2017implementation</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">horton2017performance</bcf:citekey>
-    <bcf:citekey order="16" intorder="2">iasonos2008comprehensive</bcf:citekey>
-    <bcf:citekey order="16" intorder="3">van2016performance</bcf:citekey>
-    <bcf:citekey order="16" intorder="4">zhou2018comparative</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">conaway2019impact</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">conaway2019impact</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">EWOC</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">ruppert2018overall</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">ruppert2018overall</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">araujo2023oncology</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">patil_low_2019</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">clertant2022early</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">clertant2022early</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">chiuzan_3_2024</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">BOIN</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">CRM</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">CRM</bcf:citekey>
-    <bcf:citekey order="29" intorder="2">EWOC</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">BOIN</bcf:citekey>
-    <bcf:citekey order="30" intorder="2">EWOC</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">li_phase_2024</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">BOIN12</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">EffTox</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">EffTox</bcf:citekey>
-    <bcf:citekey order="34" intorder="2">EffTox_hyperparameters</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">EffTox_hyperparameters</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">simon2stage</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">demetri2009imatinib</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">demetri2009imatinib</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">demetri2002efficacy</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">blanke2008phase</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">conaway2019impact</bcf:citekey>
-    <bcf:citekey order="41" intorder="2">ruppert2018overall</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">BOIN12</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">TITE-BOIN12</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">demetri2009imatinib</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">demetri2009imatinib</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">demetri2009imatinib</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">demetri2009imatinib</bcf:citekey>
-  </bcf:section>
-  <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="apa">
-    <bcf:sort order="1">
-      <bcf:sortitem order="1">presort</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="2" final="1">
-      <bcf:sortitem order="1">sortkey</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="3">
-      <bcf:sortitem order="1">sortname</bcf:sortitem>
-      <bcf:sortitem order="2">author</bcf:sortitem>
-      <bcf:sortitem order="3">editor</bcf:sortitem>
-      <bcf:sortitem order="4">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="5">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="4">
-      <bcf:sortitem order="1">pubstate</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-      <bcf:sortitem literal="1" order="3">-2000000000</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="6">
-      <bcf:sortitem order="1">month</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="7">
-      <bcf:sortitem order="1">day</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="8">
-      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
-      <bcf:sortitem order="2">title</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="9">
-      <bcf:sortitem order="1">volume</bcf:sortitem>
-      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
-    </bcf:sort>
-  </bcf:sortingtemplate>
-  <!-- DATALISTS -->
-  <bcf:datalist section="0"
-                name="apa/apasortcite//global/global/global"
-                type="entry"
-                sortingtemplatename="apa"
-                sortingnamekeytemplatename="apasortcite"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global"
-                namehashtemplatename="global">
-  </bcf:datalist>
-  <bcf:datalist section="0"
-                name="apa/global//global/global/global"
-                type="entry"
-                sortingtemplatename="apa"
-                sortingnamekeytemplatename="global"
-                labelprefix=""
-                uniquenametemplatename="global"
-                labelalphanametemplatename="global"
-                namehashtemplatename="global">
-  </bcf:datalist>
-</bcf:controlfile>
+   

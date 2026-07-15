@@ -200,9 +200,11 @@ For bivariate designs that jointly consider toxicity and efficacy data to identi
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.98\textwidth]{plots/phase1_dose_selection.png}
-    \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
+    \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials under N=30 for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
     \label{phase1-dose-selection}
 \end{figure}
+
+Increasing the Phase I sample size from 30 to 60 subjects improves the probability of selecting the MTD for BOIN and CRM, which increases from 69\% to 76\% and from 74\% to 88\%, respectively (\ref{phase1-dose-selection-N40,phase1-dose-selection-N50,phase1-dose-selection-N60}). For bivariate designs in immunotherapy-like profiles, the probability of selecting the OBD increases only for EffTox, and the biggest gain is observed from 30 to 40 subjects. For BOIN12, the probability of selecting the OBD remains similar across different sample sizes, which may suggest that it is not consistent in estimating the OBD. Noticeably, the probability of no RP2D being selected increases as the Phase I sample size increases for BOIN12, especially in chemotherapy-like profiles. This is because when the efficacy curve is relatively flat at lower doses, BOIN12 tends to stop for futility before exploring higher doses. 
 
 In terms of the dose allocation during the trial, CRM yields a slightly higher proportion of patients being treated at the overly toxic dose 6, but also a much lower proportion of patients being treated at subtherapeutic doses especailly in chemotherapy-like profiles. In immunotherapy-like profiles, the bivariate designs have more desirable patient allocation compared to their univariate counterparts. For example, BOIN12 achieved similar proportion of underdosing and less proportion of overdosing compared to BOIN (Figure \ref{phase1-under-overdose}). 
 
@@ -231,7 +233,7 @@ The PoS decreases uniformly as the toxicity control in Phase II and Phase III be
 
 Figure \ref{plot-vary-ph1-N} shows the PoS when the Phase I sample size is increased from 30 to 60 patients, with a corresponding reduction in the Phase III sample size to keep the total sample size fixed. As the 3+3 design has no pre-specified sample size, its results remain unchanged across the four column panels. Overall, increasing the Phase I sample size provides little improvement in PoS across the evaluated dose-finding methods. The main exception is the chemo-like profile with a steep efficacy curve, where BOIN12 and EffTox benefit from the additional Phase I data. However, in this scenario, BOIN and CRM already achieve higher PoS with the standard Phase I sample size of 30, so that the additional investment in Phase I offers limited practical benefit.
 
-For immunotherapy-like profiles, increasing the Phase I sample size helps to improve the robustness of EffTox by better targeting the OBD. BOIN12 is less sensitive to sample size changes, which is consistent with its more conservative dose selection behavior. The limited gain in PoS from increasing Phase I sample size is unlikely due to the fact that the Phase III sample size is reduced accordingly. Results from a sensitivity analysis with fixed Phase III sample size at 218 subjects (Figure \ref{plot-vary-ph1-N-fixed-ph3}) show similar trends, suggesting that the Phase I sample size of 30 might be sufficient for the purpose of dose selection in the drug development process.
+For immunotherapy-like profiles, increasing the Phase I sample size helps to improve the robustness of EffTox by better targeting the OBD. BOIN12 is less sensitive to sample size changes, which is consistent with its more conservative dose selection behavior. The limited gain in PoS from increasing Phase I sample size is unlikely due to the fact that the Phase III sample size is reduced accordingly. Results from a sensitivity analysis with fixed Phase III sample size at 218 subjects (Figure \ref{plot-vary-ph1-N-fixed-ph3}) show similar trends, suggesting that the choice of the dose-finding method plays a bigger role than sample size in Phase I during the drug development process.
 
 \begin{figure}[htbp]
     \centering
@@ -390,6 +392,27 @@ We compare the simulated outcome summaries with the outcome summaries reported f
 
 \begin{figure}[htbp]
     \centering
+    \includegraphics[width=0.9\textwidth]{plots/phase1_dose_selection_ph1_N40.png}
+    \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials under N=40 for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
+    \label{phase1-dose-selection-N40}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{plots/phase1_dose_selection_ph1_N50.png}
+    \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials under N=50 for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
+    \label{phase1-dose-selection-N50}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{plots/phase1_dose_selection_ph1_N60.png}
+    \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials under N=60 for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
+    \label{phase1-dose-selection-N60}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
     \includegraphics[width=0.95\textwidth]{plots/vary_ph1_N_fixed_ph3.png}
     \caption{Probability of overall success (PoS) when Phase I sample size is 30, 40, 50, and 60. The corresponding Phase III sample size is fixed at 218. The error bars represent 95\% Monte Carlo confidence intervals.}
     \label{plot-vary-ph1-N-fixed-ph3}
@@ -425,7 +448,7 @@ We compare the simulated outcome summaries with the outcome summaries reported f
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{plots/plot_Imatinib_ph1.png.png}
+    \includegraphics[width=0.8\textwidth]{plots/plot_Imatinib_ph1.png}
     \caption{Probability of selecting each dose as the RP2D for Imatinib across 1000 simulated Phase I trials for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected.}
     \label{plot-Imatinib-ph1}
 \end{figure}
