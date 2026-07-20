@@ -19,13 +19,13 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-A considerable amount of effort has been dedicated to improving the design of early-phase dose-finding trials in oncology. However, the implementation of novel designs in clinical practice has been slow, and the classical yet inefficient 3+3 design remains a common choice. Most comparative studies of early-phase trial designs focus on Phase I operating characteristics, leaving open the question of whether differences in dose selection meaningfully translate into downstream impact on drug development success.
+The implementation of novel early-phase dose-finding designs in clinical practice has been slow, and the classical yet inefficient 3+3 design remains a common choice. Most comparative studies focus on Phase I operating characteristics, leaving open the question of whether differences in dose-finding behaviors meaningfully translate into downstream impact on drug development success.
 
-We propose a simulation framework for the overall drug development process. We use it to evaluate how commonly used dose-finding designs (3+3, BOIN, and CRM) impact the probability of significant results in Phase III trials. We consider both chemotherapy-like profiles, where the classical monotonicity assumption about toxicity and efficacy holds, and immunotherapy-like drug profiles where the efficacy typically plateaus before reaching the maximum tolerable dose (MTD). Different toxicity control rules are implemented in Phase II and III to reflect varying extents of safety monitoring in practice. We further compare univariate designs considering only toxicity data to their bivariate extensions (BOIN12, EffTox) to investigate the potential benefits of incorporating early efficacy data. Finally, we redesign the development process of a targeted therapy, Imatinib, in patients with advanced gastrointestinal stromal tumour (GIST), to illustrate the proposed simulation pipeline. 
+We propose a simulation framework to evaluate how commonly used dose-finding designs (3+3, BOIN, CRM, BOIN12, and EffTox) impact the probability of significant results in Phase III trials. We consider both chemotherapy-like profiles, where the classical monotonicity assumption about toxicity and efficacy holds, and immunotherapy-like drug profiles where the efficacy typically plateaus before reaching the maximum tolerable dose (MTD). Different toxicity control rules are implemented in Phase II and III to reflect varying extents of safety monitoring in practice. Furthermore, we redesign the development process of a targeted therapy, Imatinib, in patients with advanced gastrointestinal stromal tumour (GIST), to illustrate the proposed simulation pipeline. 
 
-For chemotherapy-like drug profiles, BOIN and CRM substantially outperform 3+3 across a range of late-phase toxicity control settings. In contrast, for immunotherapy-like drug profiles, the advantage of more efficient designs over 3+3 is compromised, particularly under stricter toxicity control. Bivariate designs, such as EffTox and BOIN12, yield a more robust overall success rate in immunotherapy-like drug profiles, but provide limited benefit for chemotherapy-like drug profiles. BOIN12 is less sensitive to utility specification than EffTox with a Phase I sample size of 30 patients, although this difference diminishes with larger Phase I sample sizes. Increasing the Phase I sample size beyond 30 patients does not meaningfully improve the overall probability of success.
+For chemotherapy-like drug profiles, BOIN and CRM substantially outperform 3+3 across a range of late-phase toxicity control settings. In contrast, for immunotherapy-like drug profiles, the advantage of more efficient designs over 3+3 is compromised, particularly under stricter toxicity control. Bivariate designs, such as EffTox and BOIN12, yield a more robust overall success rate in immunotherapy-like drug profiles, but provide limited benefit for chemotherapy-like drug profiles. Increasing the Phase I sample size beyond 30 patients does not meaningfully improve the overall probability of success.
 
-The downstream performance of dose-finding methods heavily depends on the underlying drug profiles. Designs that perform well in identifying the MTD lead to a poor late-phase success rate when the dose-efficacy relationship has an early plateau in immunotherapy-like profiles. Utilizing efficacy information in Phase I does not necessarily guarantee higher overall success rates, likely because the limited sample size and follow-up time provide insufficient information to reliably estimate both efficacy and toxicity. These findings highlight the importance of understanding the potential shape of the candidate drug profile from pre-clinical studies when designing early-phase trials. The proposed simulation framework complements traditional Phase I evaluations by providing a more comprehensive perspective on drug development, serving as a planning tool to assess how drug profile assumptions and safety monitoring strategies interact with early-phase design choices to influence the overall success rate.
+The downstream performance of dose-finding methods heavily depends on the underlying drug profiles. Designs that perform well in identifying the MTD lead to a poor late-phase success rate when the dose-efficacy relationship has an early plateau in immunotherapy-like profiles. These findings highlight the importance of understanding the potential shape of the candidate drug profile from pre-clinical studies when designing early-phase trials. 
 
 \end{abstract}
 \section{Introduction}
@@ -118,10 +118,10 @@ Cohort size: 3\\
 Toxicity/efficacy limits: \\
 $\phi_T=0.35$, $\phi_E=0.5$\\
 Utility table: \\
-$u_{1(\text{no tox, eff})}=100,\\
-u_{2(\text{no tox, no eff})}=40,\\
-u_{3(\text{tox, eff})}=60,\\
-u_{4(\text{tox, no eff})}=0$ 
+$u_{1(\text{no tox, eff})}=100$,\\
+$u_{2(\text{no tox, no eff})}=40$,\\
+$u_{3(\text{tox, eff})}=60$,\\
+$u_{4(\text{tox, no eff})}=0$ 
 }
 &
 Terminate if the first dose indicates de-escalation; doses with $\ge 0.95$ posterior probability of DLT $\ge \phi_T$ are inadmissible; doses with $\le 0.9$ posterior probability of TRR $\le \phi_E$ are inadmissible \\
@@ -204,7 +204,7 @@ For bivariate designs that jointly consider toxicity and efficacy data to identi
     \label{phase1-dose-selection}
 \end{figure}
 
-Increasing the Phase I sample size from 30 to 60 subjects improves the probability of selecting the MTD for BOIN and CRM, which increases from 69\% to 76\% and from 74\% to 88\%, respectively (\ref{phase1-dose-selection-N40,phase1-dose-selection-N50,phase1-dose-selection-N60}). For bivariate designs in immunotherapy-like profiles, the probability of selecting the OBD increases only for EffTox, and the biggest gain is observed from 30 to 40 subjects. For BOIN12, the probability of selecting the OBD remains similar across different sample sizes, which may suggest that it is not consistent in estimating the OBD. Noticeably, the probability of no RP2D being selected increases as the Phase I sample size increases for BOIN12, especially in chemotherapy-like profiles. This is because when the efficacy curve is relatively flat at lower doses, BOIN12 tends to stop for futility before exploring higher doses. 
+Increasing the Phase I sample size from 30 to 60 subjects improves the probability of selecting the MTD for BOIN and CRM, which increases from 69\% to 76\% and from 74\% to 88\%, respectively (Figure \ref{phase1-dose-selection-N40}, Figure \ref{phase1-dose-selection-N50}, Figure \ref{phase1-dose-selection-N60}). For bivariate designs in immunotherapy-like profiles, the probability of selecting the OBD increases only for EffTox, and the biggest gain is observed from 30 to 40 subjects. For BOIN12, the probability of selecting the OBD remains similar across different sample sizes, which may suggest that it is not consistent in estimating the OBD. Noticeably, the probability of no RP2D being selected increases as the Phase I sample size increases for BOIN12, especially in chemotherapy-like profiles. This is because when the efficacy curve is relatively flat at lower doses, BOIN12 tends to stop for futility before exploring higher doses. 
 
 In terms of the dose allocation during the trial, CRM yields a slightly higher proportion of patients being treated at the overly toxic dose 6, but also a much lower proportion of patients being treated at subtherapeutic doses especailly in chemotherapy-like profiles. In immunotherapy-like profiles, the bivariate designs have more desirable patient allocation compared to their univariate counterparts. For example, BOIN12 achieved similar proportion of underdosing and less proportion of overdosing compared to BOIN (Figure \ref{phase1-under-overdose}). 
 
@@ -243,7 +243,7 @@ For immunotherapy-like profiles, increasing the Phase I sample size helps to imp
 \end{figure}
 
 \subsection{Sensitivity analysis results}
-For BOIN12, as $u_2$, the utility value for outcome combination (No Toxicity, No Response), increases, the design becomes more conservative with increasing probability of selecting one dose below the OBD than one dose above it. But the probability of selecting the OBD is relatively stable across different values of $u_2$ (Figure \ref{plot-sens-BOIN12-RP2D}). Under liberal toxicity control, the PoS shows moderate variation across different values of $u_2$, except in the chemotherapy-like profile with a steep efficacy increase, where the PoS is nearly unchanged. Immuno-agents often show efficacy at doses much lower than the MTD. Hence it makes sense to set $u_2 < u_3$, i.e., $u_2 \lt 50$ to weigh efficacy more than toxicity. For this range of utility specification, the PoS is relatively robust with nearly overlapping curves (Figure \ref{plot-sens-BOIN12-PoS}). 
+For BOIN12, as $u_2$, the utility value for outcome combination (No Toxicity, No Response), increases, the design becomes more conservative with increasing probability of selecting one dose below the OBD than one dose above it. But the probability of selecting the OBD is relatively stable across different values of $u_2$ (Figure \ref{plot-sens-BOIN12-RP2D}). Under liberal toxicity control, the PoS shows moderate variation across different values of $u_2$, except in the chemotherapy-like profile with a steep efficacy increase, where the PoS is nearly unchanged. Immuno-agents often show efficacy at doses much lower than the MTD. Hence it makes sense to set $u_2 < u_3$, i.e., $u_2 < 50$ to weigh efficacy more than toxicity. For this range of utility specification, the PoS is relatively robust with nearly overlapping curves (Figure \ref{plot-sens-BOIN12-PoS}). 
 
 For EffTox, the shape of the contour plots has a major impact on dose selection. The OBD in immunotherapy-like profiles is better identified with a linear-shaped utility contour while the MTD in chemotherapy-like profiles is better targeted with a concave-shaped utility contour (Figure \ref{plot-sens-EffTox-RP2D}). Thus, the optimal contour shape depends strongly on the underlying drug profile. PoS varies more across contour specifications for EffTox than across utility choices for BOIN12. For immunotherapy-like profiles, PoS differences become more pronounced under stricter toxicity control while for chemotherapy-like profiles, differences across contour shapes diminish as toxicity control becomes stricter. The contour used in the main analysis is well tuned for immunotherapy-like profiles and achieves relatively high PoS among the evaluated shapes (Figure \ref{plot-sens-EffTox-PoS}). 
 
@@ -268,9 +268,11 @@ In contrast, for immunotherapy-like profiles, the advantages of more efficient u
 
 The steeper decline in PoS with stricter toxicity suspension thresholds for chemotherapy-like profiles reflects their monotonic dose-efficacy relationships: doses near the MTD are often either subtherapeutic or excessively toxic, so dose mis-selection carries a large penalty and leaves less room for downstream success. In contrast, immunotherapy-like profiles typically plateau around the OBD, meaning adjacent doses retain comparable efficacy and differ mainly by unnecessary toxicity. Consequently, modest dose mis-selection does not severely compromise efficacy, leading to greater downstream robustness. Therefore, downstream simulation is particularly valuable when prior knowledge on the underlying drug profile is limited or when stringent toxicity monitoring is anticipated in later trial phases, as under these conditions, accurate MTD identification may not directly translate into higher PoS. 
 
+Utilizing efficacy information in Phase I does not necessarily guarantee higher overall success rates, likely because the limited sample size and follow-up time provide insufficient information to reliably estimate both efficacy and toxicity. 
+
 This study has several limitations. First, we considered only a limited set of drug profiles and representative Phase I designs. In addition, toxicity assessment in the main simulations was primarily based on short-term DLT outcomes, which may not fully capture the long-term safety profile of a treatment. The Imatinib example highlights this limitation: an RP2D selected using early DLT data alone may exceed the true OBD because later cumulative or delayed toxicities are not yet observable during the Phase I evaluation window. As a result, doses that initially appear tolerable may subsequently lead to substantial toxicity burden and increased trial suspension rate in later phases. For agents with delayed or cumulative toxicities, methods that incorporate long-term toxicity and efficacy information, such as TITE-BOIN12, may be preferable \parencite{TITE-BOIN12}. Second, our late-phase trial models are simplified and do not capture the full complexity of real-world development. For example, we did not model dose modifications, treatment discontinuation, or more sophisticated safety monitoring in Phase II and III, all of which could mitigate the downstream impact of aggressive Phase I dose selection. We also made quite a strong assumption that the underlying survival distribution is exponential, such that we could generate survival data based on reported median survival times.
 
-In summary, downstream success depends strongly on the shape of the underlying drug profile. These findings underline the importance of understanding the potential shape of the candidate drug profile from pre-clinical studies when designing early-phase trials. We propose a flexible simulation pipeline for methodological comparison. Future work could utilize this framework to evaluate the impact of carrying multiple doses into Phase II and other novel adaptive early-phase designs, such as seamless Phase I/II trials and platform trials.
+In summary, downstream success depends strongly on the shape of the underlying drug profile. These findings underline the importance of understanding the potential shape of the candidate drug profile from pre-clinical studies when designing early-phase trials. We propose a flexible simulation pipeline for methodological comparison. Future work could utilize this framework to evaluate the impact of carrying multiple doses into Phase II and other novel adaptive early-phase designs, such as seamless Phase I/II trials and platform trials. The proposed simulation framework complements traditional Phase I evaluations by providing a more comprehensive perspective on drug development, serving as a planning tool to assess how drug profile assumptions and safety monitoring strategies interact with early-phase design choices to influence the overall success rate.
 
 
 \newpage
@@ -385,13 +387,6 @@ We compare the simulated outcome summaries with the outcome summaries reported f
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{plots/supplement/plot_PoTS.png}
-    \caption{Probability of Toxicity Suspension (PoTS) across different Phase I dose-finding methods and late-phase toxicity control settings for chemotherapy-like and immunotherapy-like drug profiles. The error bars represent 95\% Monte Carlo confidence intervals.}
-    \label{plot-PoTS}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
     \includegraphics[width=0.9\textwidth]{plots/phase1_dose_selection_ph1_N40.png}
     \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials under N=40 for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
     \label{phase1-dose-selection-N40}
@@ -409,6 +404,14 @@ We compare the simulated outcome summaries with the outcome summaries reported f
     \includegraphics[width=0.9\textwidth]{plots/phase1_dose_selection_ph1_N60.png}
     \caption{Probability of selecting each dose as the RP2D across 1000 simulated Phase I trials under N=60 for univariate designs (top) and bivariate designs (bottom). NA means the Phase I trial is terminated early and no RP2D is selected. For univariate designs and bivariate designs in chemotherapy-like profiles, the target dose is the MTD (dose 5) in green; for bivariate designs in immunotherapy-like profiles, the target dose is the OBD (dose 3 for early plateau and dose 4 for late plateau) in blue.}
     \label{phase1-dose-selection-N60}
+\end{figure}
+
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.9\textwidth]{plots/supplement/plot_PoTS.png}
+    \caption{Probability of Toxicity Suspension (PoTS) across different Phase I dose-finding methods and late-phase toxicity control settings for chemotherapy-like and immunotherapy-like drug profiles. The error bars represent 95\% Monte Carlo confidence intervals.}
+    \label{plot-PoTS}
 \end{figure}
 
 \begin{figure}[htbp]
