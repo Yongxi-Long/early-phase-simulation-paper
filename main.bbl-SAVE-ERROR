@@ -880,6 +880,47 @@
       \field{pages}{3141\bibrangedash 3147}
       \range{pages}{7}
     \endentry
+    \entry{dimasi2007economics}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=321cb60e86cdc53518a96c341d84df4b}{%
+           family={DiMasi},
+           familyi={D\bibinitperiod},
+           given={Joseph\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37e5af333680278124876783a7644ddf}{%
+           family={Grabowski},
+           familyi={G\bibinitperiod},
+           given={Henry\bibnamedelima G},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Society of Clinical Oncology}%
+      }
+      \strng{namehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{fullhash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{fullhashraw}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{bibnamehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authorbibnamehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authornamehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authorfullhash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authorfullhashraw}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Clinical Oncology}
+      \field{number}{2}
+      \field{title}{Economics of new oncology drug development}
+      \field{volume}{25}
+      \field{year}{2007}
+      \field{pages}{209\bibrangedash 216}
+      \range{pages}{8}
+    \endentry
     \entry{fujimoto_phase_2017}{article}{}{}
       \name{author}{16}{}{%
         {{un=0,uniquepart=base,hash=029da6d3f4e09e9f720713aa1aed9810}{%
@@ -1171,6 +1212,93 @@
       \field{year}{2008}
       \field{pages}{465\bibrangedash 477}
       \range{pages}{13}
+    \endentry
+    \entry{kessels2026knowledge}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=50c13b74173add078b07e87bf1f96008}{%
+           family={Kessels},
+           familyi={K\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0274aae8bc9bbd840512b20f6cc90bb}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Yongxi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8609732b6a8d8bc1b9fe0e9acb31e94e}{%
+           family={Spijker},
+           familyi={S\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02d7017a67f2c4d42a7ef34b3a447d45}{%
+           family={Schuit},
+           familyi={S\bibinitperiod},
+           given={Ewoud},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c36949f3f66bb488c8958ed423fac7b0}{%
+           family={Hollestelle},
+           familyi={H\bibinitperiod},
+           given={Marieke},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=703666db9be96680debc4aabf2432ac2}{%
+           family={Lieshout},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=0dcba76f70fe48dee8d713ee0ebc44bf}{%
+           family={Steeghs},
+           familyi={S\bibinitperiod},
+           given={Neeltje},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3af96c52a7f6c3e859a3b8f317936055}{%
+           family={Elias},
+           familyi={E\bibinitperiod},
+           given={Sjoerd\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4ec1141d4864e2aea89c101b9bd6a95}{%
+           family={Ven},
+           familyi={V\bibinitperiod},
+           given={Peter\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e4aa05a6a6ded0a3566e5da9bdf2c3a2}
+      \strng{fullhash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{fullhashraw}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{bibnamehash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{authorbibnamehash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{authornamehash}{e4aa05a6a6ded0a3566e5da9bdf2c3a2}
+      \strng{authorfullhash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{authorfullhashraw}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pharmaceutical Statistics}
+      \field{number}{4}
+      \field{title}{A Knowledge Base of Designs and Statistical Methods for Adaptive Clinical Dose-Finding Trials}
+      \field{volume}{25}
+      \field{year}{2026}
+      \field{pages}{e70074}
+      \range{pages}{-1}
     \endentry
     \entry{review_phase1}{article}{}{}
       \name{author}{3}{}{%
@@ -2969,6 +3097,47 @@
       \field{pages}{3141\bibrangedash 3147}
       \range{pages}{7}
     \endentry
+    \entry{dimasi2007economics}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=321cb60e86cdc53518a96c341d84df4b}{%
+           family={DiMasi},
+           familyi={D\bibinitperiod},
+           given={Joseph\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=37e5af333680278124876783a7644ddf}{%
+           family={Grabowski},
+           familyi={G\bibinitperiod},
+           given={Henry\bibnamedelima G},
+           giveni={H\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Society of Clinical Oncology}%
+      }
+      \strng{namehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{fullhash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{fullhashraw}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{bibnamehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authorbibnamehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authornamehash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authorfullhash}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \strng{authorfullhashraw}{e1a7ea4a6f258f8cfe5faaefce119d57}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Clinical Oncology}
+      \field{number}{2}
+      \field{title}{Economics of new oncology drug development}
+      \field{volume}{25}
+      \field{year}{2007}
+      \field{pages}{209\bibrangedash 216}
+      \range{pages}{8}
+    \endentry
     \entry{fujimoto_phase_2017}{article}{}{}
       \name{author}{16}{}{%
         {{un=0,uniquepart=base,hash=029da6d3f4e09e9f720713aa1aed9810}{%
@@ -3260,6 +3429,93 @@
       \field{year}{2008}
       \field{pages}{465\bibrangedash 477}
       \range{pages}{13}
+    \endentry
+    \entry{kessels2026knowledge}{article}{}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=50c13b74173add078b07e87bf1f96008}{%
+           family={Kessels},
+           familyi={K\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0274aae8bc9bbd840512b20f6cc90bb}{%
+           family={Long},
+           familyi={L\bibinitperiod},
+           given={Yongxi},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8609732b6a8d8bc1b9fe0e9acb31e94e}{%
+           family={Spijker},
+           familyi={S\bibinitperiod},
+           given={Rene},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=02d7017a67f2c4d42a7ef34b3a447d45}{%
+           family={Schuit},
+           familyi={S\bibinitperiod},
+           given={Ewoud},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c36949f3f66bb488c8958ed423fac7b0}{%
+           family={Hollestelle},
+           familyi={H\bibinitperiod},
+           given={Marieke},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=703666db9be96680debc4aabf2432ac2}{%
+           family={Lieshout},
+           familyi={L\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=0dcba76f70fe48dee8d713ee0ebc44bf}{%
+           family={Steeghs},
+           familyi={S\bibinitperiod},
+           given={Neeltje},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3af96c52a7f6c3e859a3b8f317936055}{%
+           family={Elias},
+           familyi={E\bibinitperiod},
+           given={Sjoerd\bibnamedelima G},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4ec1141d4864e2aea89c101b9bd6a95}{%
+           family={Ven},
+           familyi={V\bibinitperiod},
+           given={Peter\bibnamedelima M},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{e4aa05a6a6ded0a3566e5da9bdf2c3a2}
+      \strng{fullhash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{fullhashraw}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{bibnamehash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{authorbibnamehash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{authornamehash}{e4aa05a6a6ded0a3566e5da9bdf2c3a2}
+      \strng{authorfullhash}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \strng{authorfullhashraw}{90ce18adc3bd9ef011f8d07affeab0fe}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pharmaceutical Statistics}
+      \field{number}{4}
+      \field{title}{A Knowledge Base of Designs and Statistical Methods for Adaptive Clinical Dose-Finding Trials}
+      \field{volume}{25}
+      \field{year}{2026}
+      \field{pages}{e70074}
+      \range{pages}{-1}
     \endentry
     \entry{review_phase1}{article}{}{}
       \name{author}{3}{}{%
